@@ -38,7 +38,7 @@ if [ ! -f "${output_dir}/download_commonvoice.done" ]; then
     done
 
     # download the commonvoice data
--   # all 5 files are downloaded in parallel
+    # all 5 files are downloaded in parallel
     org_dir=${PWD}
     cd $output_dir
     for i in "${!langs[@]}"; do
